@@ -5,6 +5,7 @@ export default defineConfig(({ command }) => {
   const isProduction = command === 'build';
   
   return {
+    base: '/vite-jsdoc-template/',
     build: {
       lib: {
         entry: resolve(__dirname, 'src/index.js'),
