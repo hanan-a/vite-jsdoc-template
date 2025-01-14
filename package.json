@@ -1,0 +1,33 @@
+{
+  "name": "vite-js-doc-template",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check-types": "tsc --noEmit",
+    "docs": "jsdoc -c jsdoc.config.json",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,md}\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-env": "^7.26.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^4.0.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.0",
+    "vite": "^4.3.9"
+  }
+}
